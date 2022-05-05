@@ -4,3 +4,4 @@ Touchstone+实验附录
 
 
 ![image](https://github.com/smartgood1/Touchstone-appendix/blob/main/%E5%AE%9E%E9%AA%8C%E8%B4%9F%E8%BD%BD.png)
+q1: SELECT Type, SUM (SalesVolume) FROM Part LEFT JOIN Product ON P_Partld=Pr_Partld GROUP BY Type;
