@@ -5,3 +5,10 @@ Touchstone+实验附录
 ![image](https://github.com/smartgood1/Touchstone-appendix/blob/main/%E5%AE%9E%E9%AA%8C%E8%B4%9F%E8%BD%BD.png)
 
 q1: SELECT Type, SUM (SalesVolume) FROM Part LEFT JOIN Product ON P_Partld=Pr_Partld GROUP BY Type;
+
+q2: SELECT Kind, COUNT (*) FROM Part RIGHT JOIN Product ON P_Partld=Pr_Partld WHERE Type = ? GROUP BY Kind;
+
+q3: SELECT P_Partld, Productld FROM Part FULL OUT JOIN Product ON P_Partld=Pr_PartId WHERE Supplier = ? AND SalesVolume > ?;
+
+q4: SELECT Productld FROM Part, Product ON P_Partld=Pr_Partld WHERE Stock < ?;
+
